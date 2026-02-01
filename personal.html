@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal projects in game development, machine learning, and systems">
+  <title>Personal Projects | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ========== Header ========== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">Portfolio</a>
+      
+      <nav class="header__nav" aria-label="Main navigation">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+        
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="academic.html" class="nav__link">Academic Projects</a></li>
+          <li><a href="personal.html" class="nav__link nav__link--active">Personal Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== Page Header ========== -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title">Personal Projects</h1>
+        <p class="page-header__subtitle">Side projects, experiments, and passion-driven work</p>
+      </div>
+    </section>
+
+    <!-- ========== Project Grid ========== -->
+    <section class="section" aria-label="Personal projects list">
+      <div class="container">
+        <div class="project-grid">
+          
+          <!-- Project 1: Unity Mini Game -->
+          <article 
+            class="project-card" 
+            tabindex="0"
+            role="button"
+            aria-label="View details for Unity Mini Game"
+            data-title="Unity Mini Game"
+            data-theme="Game Development / C#"
+            data-description="A passion project that allowed me to explore game development using the Unity engine. This mini game started as a weekend experiment and evolved into a polished prototype featuring custom gameplay mechanics, engaging level design, and satisfying player feedback systems. The development process covered the full game creation pipeline: conceptualizing the core game loop, implementing player controls and physics, designing levels that progressively introduce new challenges, creating visual effects and animations, integrating sound design, and optimizing performance for smooth gameplay. Working in Unity deepened my understanding of game architecture patterns, component-based design, and the importance of iteration in creating fun experiences. The project also involved learning C# scripting patterns specific to game development."
+            data-contributions='["Designed and implemented core gameplay mechanics with responsive controls", "Created 10+ levels with progressive difficulty and unique challenges", "Developed custom shader effects for visual polish", "Integrated audio system with dynamic sound effects and music", "Implemented save/load system for player progress", "Optimized performance for consistent 60 FPS gameplay"]'
+            data-tech-stack='["Unity", "C#", "Visual Studio", "Blender", "Audacity", "Git"]'
+            data-images='[]'
+          >
+            <span class="project-card__tag">Game Development / C#</span>
+            <h2 class="project-card__title">Unity Mini Game</h2>
+            <p class="project-card__teaser">A polished game prototype built in Unity, featuring custom mechanics and engaging level design.</p>
+          </article>
+
+          <!-- Project 2: Neural Network From Scratch -->
+          <article 
+            class="project-card" 
+            tabindex="0"
+            role="button"
+            aria-label="View details for Neural Network From Scratch"
+            data-title="Neural Network From Scratch (C++)"
+            data-theme="ML Fundamentals / C++"
+            data-description="An educational deep dive into the mathematical foundations of neural networks by implementing everything from first principles in C++. Rather than using existing frameworks, this project built a neural network library from the ground up, including matrix operations, activation functions, loss computation, and backpropagation. The implementation started with simple perceptrons, then expanded to multi-layer networks, convolutional layers, and various optimization algorithms like SGD, Adam, and RMSprop. Writing in C++ forced careful consideration of memory management, computational efficiency, and numerical stability. The project culminated in training models on classic datasets like MNIST, achieving respectable accuracy while truly understanding every computation happening during training. This foundational knowledge proved invaluable for debugging and optimizing models in high-level frameworks."
+            data-contributions='["Implemented efficient matrix operations library with SIMD optimizations", "Built forward and backward propagation for dense and convolutional layers", "Developed multiple activation functions with analytical derivatives", "Created Adam, SGD, and RMSprop optimizers from mathematical definitions", "Achieved 98% accuracy on MNIST with custom implementation", "Documented the mathematics behind each component extensively"]'
+            data-tech-stack='["C++", "CMake", "Eigen", "OpenMP", "GTest", "Valgrind", "Python (visualization)"]'
+            data-images='[]'
+          >
+            <span class="project-card__tag">ML Fundamentals / C++</span>
+            <h2 class="project-card__title">Neural Network From Scratch (C++)</h2>
+            <p class="project-card__teaser">Understanding deep learning fundamentals by implementing neural networks in C++ without frameworks.</p>
+          </article>
+
+          <!-- Project 3: Home Server -->
+          <article 
+            class="project-card" 
+            tabindex="0"
+            role="button"
+            aria-label="View details for Home Server: Self-hosted Media & Game Services"
+            data-title="Home Server: Self-hosted Media & Game Services"
+            data-theme="Systems / Self-Hosting"
+            data-description="A comprehensive home server project that transformed spare hardware into a powerful self-hosted platform for media streaming, game servers, and personal cloud services. The project involved setting up a Linux server environment, configuring containerized applications with Docker, implementing proper networking with reverse proxies and SSL certificates, and ensuring security through firewalls and access controls. Services include a media server for movies and music streaming to any device, game servers for hosting multiplayer sessions with friends, file synchronization and backup solutions, and monitoring dashboards for system health. The project emphasized learning production-level DevOps practices: automated deployments, proper logging, backup strategies, and maintaining uptime. It's become an essential part of my home infrastructure, serving family and friends reliably."
+            data-contributions='["Configured Ubuntu Server with full disk encryption and hardened security", "Deployed 15+ containerized services using Docker Compose", "Set up Nginx reverse proxy with automatic SSL via Let\\'s Encrypt", "Implemented automated backup system with off-site redundancy", "Created monitoring stack with Prometheus and Grafana dashboards", "Maintained 99.5% uptime over 2 years of operation"]'
+            data-tech-stack='["Ubuntu Server", "Docker", "Docker Compose", "Nginx", "Plex", "Nextcloud", "Prometheus", "Grafana"]'
+            data-images='[]'
+          >
+            <span class="project-card__tag">Systems / Self-Hosting</span>
+            <h2 class="project-card__title">Home Server: Self-hosted Media & Game Services</h2>
+            <p class="project-card__teaser">Self-hosted infrastructure for media streaming, game servers, and personal cloud services.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer__links" aria-label="Social links">
+        <a href="https://github.com/yourusername" class="footer__link" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/yourusername" class="footer__link" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+        <a href="mailto:your.email@example.com" class="footer__link">
+          Email
+        </a>
+      </nav>
+      <p class="footer__copy">© 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
