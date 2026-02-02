@@ -51,14 +51,32 @@
             aria-label="View details for Multi-objective Optimization & Algorithm Tuning"
             data-title="Multi-objective Optimization & Algorithm Tuning (Master Thesis)"
             data-theme="Optimization / Metaheuristics"
-            data-description="My Master's thesis focused on developing and tuning multi-objective optimization algorithms for complex real-world problems. The research explored the intersection of metaheuristic algorithms and automated algorithm configuration, aiming to find the optimal parameter settings that balance exploration and exploitation. I investigated various benchmark functions and real-world optimization scenarios, comparing the performance of different algorithmic approaches. The work involved extensive experimentation with evolutionary algorithms, particle swarm optimization, and hybrid methods. A key contribution was the development of an automated tuning framework that significantly reduced the manual effort required for parameter optimization while achieving competitive results across diverse problem instances."
-            data-contributions='["Developed a novel automated parameter tuning framework for multi-objective metaheuristics", "Conducted comprehensive benchmarking across 20+ test functions and real-world problems", "Implemented and compared 5+ state-of-the-art multi-objective optimization algorithms", "Achieved 15-25% improvement in convergence speed through adaptive parameter control", "Published findings and methodology documentation for reproducibility", "Created visualization tools for Pareto front analysis and algorithm comparison"]'
-            data-tech-stack='["Python", "NumPy", "SciPy", "Matplotlib", "DEAP", "Pandas", "LaTeX"]'
+            data-description="This thesis investigates automatic algorithm design approaches for multi-objective combinatorial optimization, with a particular focus on the bi-objective Permutation Flow Shop Problem (PFSP). The work is conducted within the EMILI framework, a grammar-based system for the automatic generation and execution of stochastic local search algorithms. Several optimization paradigms are studied, including classical local search methods, evolutionary algorithms, and hybrid approaches. First, a genetic algorithm and a memetic variant integrating local search are implemented and analyzed in order to assess the impact of hybridization on solution quality and computational cost. The results show that memetic algorithms significantly improve performance and robustness compared to pure genetic algorithms, at the expense of increased execution time. Second, the limitations of classical bi-objective local search strategies such as Pareto Local Search (PLS) and Two-Phase Local Search (TPLS) are analyzed when combined with evolutionary methods. To overcome these limitations, a dedicated multi-objective evolutionary algorithm based on decomposition (MOEA/D) is implemented and integrated into EMILI. The proposed MOEA/D variant produces denser and more stable Pareto front approximations within the same time-based budget. Finally, automatic algorithm configuration is performed using the irace tool in order to systematically explore the large design space induced by EMILI’s grammar. Extensive experimental campaigns show that the configurations selected by irace strongly depend on instance size, computational budget, and optimization strategy. In particular, local search–based methods dominate on small instances, while population-based and memetic approaches become increasingly competitive as problem size grows. Overall, this work demonstrates the effectiveness of combining automatic algorithm design, decomposition-based multi-objective optimization, and evolutionary hybridization. Beyond performance improvements, the results provide methodological insights into how automatic configuration tools adapt algorithmic structures to problem characteristics, reinforcing the relevance of automated design approaches for complex multi-objective optimization problems."
+            data-contributions='["Implemented genetic and memetic algorithms for multi-objective optimization within a grammar-based framework", "Designed and integrated a MOEA/D-based evolutionary algorithm for improved Pareto front quality", "Analyzed limitations of classical bi-objective local search methods (PLS, TPLS)", "Applied automatic algorithm configuration using irace across multiple strategies and budgets", "Conducted large-scale experimental evaluations on the bi-objective PFSP"]'
+            data-tech-stack='["C++", "EMILI Framework", "Heuristic", "EA", "LaTeX"]'
+            data-images='["images/memetic_imp.png"]'
+          >
+            <span class="project-card__tag">Multi-objective / Optimization / Metaheuristics</span>
+            <h2 class="project-card__title">Multi-objective combinatorial optimization with automatic design approaches</h2>
+            <p class="project-card__teaser">Master's thesis exploring automated parameter tuning for multi-objective metaheuristic algorithms under grammar based syntax.</p>
+          </article>
+
+          <!-- Project 1.5: IA trading bot  -->
+          <article 
+            class="project-card" 
+            tabindex="0"
+            role="button"
+            aria-label="View details for Ai strategies for trading stocks"
+            data-title="AI Trading Strategies Comparison"
+            data-theme="Trading strategy / Reinforcement Learning / Neural Network"
+            data-description="This was a self-initiated project where I decided to combine artificial intelligence with a domain I was already familiar with: financial trading. I started with relatively simple predictive models, such as neural networks and XGBoost, trained to estimate short-term market movements. Based on these predictions, I implemented a basic trading strategy: buy when the model predicts an upward movement and sell when it predicts a downward one. Even with this simple setup, the strategy achieved performance slightly above a buy-and-hold baseline. From there, I explored more advanced approaches. I implemented reinforcement learning agents, experimented with LSTM models for temporal patterns, and integrated an LLM-based sentiment component to extract signals from financial news and Twitter data. These strategies allowed the model to take more contextual and sequential information into account. The system was evaluated on several years of historical data, focusing on US stocks. Additional macro-economic indicators such as RSI, unemployment claims and sector-level information (technology, healthcare, etc.) were included as features. Under realistic backtesting assumptions, the more advanced strategies achieved strong results, reaching around 30% annual returns in some configurations. Beyond performance, this project taught me how sensitive trading systems are to data quality, feature design and evaluation bias, and reinforced the importance of cautious interpretation of results in real-world, noisy environments."
+            data-contributions='["Predictive modeling for financial time series", "Reinforcement learning for decision making", "Sentiment analysis using LLMs", "Feature engineering with macro-economic indicators"]'
+            data-tech-stack='["Python", "NumPy", "Pytorch", "yfinance", "Fred API"]'
             data-images='[]'
           >
-            <span class="project-card__tag">Optimization / Metaheuristics</span>
-            <h2 class="project-card__title">Multi-objective Optimization & Algorithm Tuning</h2>
-            <p class="project-card__teaser">Master's thesis exploring automated parameter tuning for multi-objective metaheuristic algorithms.</p>
+            <span class="project-card__tag">Trading strategy/ NN / RL</span>
+            <h2 class="project-card__title"> Trading IA comparison</h2>
+            <p class="project-card__teaser"> This project compare different strategies in the topics of IA trading</p>
           </article>
 
           <!-- Project 2: Reinforcement Learning -->
@@ -69,9 +87,9 @@
             aria-label="View details for Reinforcement Learning & Multi-Agent Interaction"
             data-title="Reinforcement Learning & Multi-Agent Interaction"
             data-theme="Reinforcement Learning / Game Theory"
-            data-description="This project explored the fascinating intersection of reinforcement learning and game theory in multi-agent environments. Working in a team, we developed agents capable of learning optimal strategies in competitive and cooperative scenarios. The project involved implementing various RL algorithms including Q-learning, policy gradients, and actor-critic methods, then extending them to handle multi-agent dynamics. We studied emergent behaviors, Nash equilibria, and the challenges of non-stationary environments where multiple learning agents interact simultaneously. The experimental framework allowed us to test our agents in custom game environments, analyzing convergence properties and strategy evolution over time."
-            data-contributions='["Implemented deep Q-learning and policy gradient algorithms from scratch", "Designed custom multi-agent game environments for experimentation", "Analyzed emergent behaviors and equilibrium strategies in competitive settings", "Developed visualization tools for policy analysis and reward tracking", "Contributed to theoretical analysis of convergence in multi-agent systems"]'
-            data-tech-stack='["Python", "PyTorch", "OpenAI Gym", "NumPy", "Matplotlib", "TensorBoard"]'
+            data-description="This project groups several smaller experiments around a common theme: how multiple agents interact, learn and make decisions together. A first set of projects focused on reinforcement learning applied to pathfinding problems. I experimented with different exploration strategies, such as ε-greedy policies and temperature-based action selection, to study how agents balance exploration and exploitation in dynamic environments. Another part of the project explored strategic interactions using variants of the Prisoner’s Dilemma. Different agent roles were implemented, such as collaborators, defectors, punishers and abstainers, each following its own decision rules. By varying agent distributions and interaction rules, I analyzed how cooperation, punishment and selfish behavior emerge over time. These projects helped me better understand how local decision rules can lead to complex global behaviors, and how game theory concepts translate into concrete multi-agent simulations."
+            data-contributions='["Implemented deep Q-learning and policy gradient algorithms from scratch", "Designed custom multi-agent game environments for experimentation", "Analyzed emergent behaviors and equilibrium strategies in competitive settings"]'
+            data-tech-stack='["Python", "PyTorch", "OpenAI Gym", "NumPy", "Matplotlib"]'
             data-images='[]'
           >
             <span class="project-card__tag">Reinforcement Learning / Game Theory</span>
@@ -87,9 +105,9 @@
             aria-label="View details for CNN for Alzheimer's Disease Stage Classification"
             data-title="CNN for Alzheimer's Disease Stage Classification"
             data-theme="Deep Learning / Computer Vision"
-            data-description="A deep learning project focused on medical image analysis for early Alzheimer's disease detection and stage classification. Using brain MRI scans, we developed and trained convolutional neural networks to distinguish between healthy individuals and patients at various stages of cognitive decline. The project involved extensive preprocessing of medical imaging data, including skull stripping, intensity normalization, and data augmentation to address class imbalance. We experimented with multiple CNN architectures, from custom networks to transfer learning with pre-trained models like VGG and ResNet. Model interpretability was a key focus, using techniques like Grad-CAM to visualize which brain regions influenced the model's predictions, providing insights valuable for clinical understanding."
-            data-contributions='["Preprocessed and curated a dataset of 2000+ brain MRI scans", "Implemented custom CNN architectures optimized for medical imaging", "Applied transfer learning with VGG16 and ResNet50 for improved accuracy", "Developed Grad-CAM visualizations for model interpretability", "Achieved 89% classification accuracy across 4 disease stages", "Documented ethical considerations for AI in medical diagnostics"]'
-            data-tech-stack='["Python", "TensorFlow", "Keras", "OpenCV", "Nibabel", "Scikit-learn", "NumPy"]'
+            data-description="The objective of this project was to build a reliable image classification system to detect and classify four stages of Alzheimer s disease. I started by preparing the dataset, applying normalization and data augmentation techniques to increase the number of samples and address class imbalance. This step was crucial to ensure fair training and stable model behavior. I then implemented a convolutional neural network from scratch to fully understand the architecture and training process. After tuning hyperparameters and evaluating the baseline model, I compared its performance with a transfer learning approach by fine-tuning the final layers of a pre-trained ResNet-50 model. Special attention was given to evaluation metrics. In a medical context, false negatives are particularly critical, as predicting a healthy state for a sick patient is more harmful than the opposite. To address this, I adapted the loss and evaluation strategy to penalize false negatives more strongly and analyzed confusion matrices in detail. This project highlighted the importance of data preparation, model comparison and domain-specific evaluation criteria in applied machine learning."
+            data-contributions='["Preprocessed and curated a dataset of 2000+ brain MRI scans", "Implemented custom CNN architectures optimized for medical imaging", "Applied transfer learning with ResNet50 for improved accuracy", "Achieved 89% classification accuracy across 4 disease stages"]'
+            data-tech-stack='["Python", "Pytorch", "Scikit-learn", "NumPy"]'
             data-images='[]'
           >
             <span class="project-card__tag">Deep Learning / Computer Vision</span>
@@ -105,9 +123,9 @@
             aria-label="View details for Regression Pipeline for Hand Movement Prediction"
             data-title="Regression Pipeline for Hand Movement Prediction"
             data-theme="Machine Learning / Regression"
-            data-description="This machine learning project tackled the challenge of predicting continuous hand movement trajectories from sensor data. The goal was to build a robust regression pipeline capable of accurately forecasting hand positions and velocities for applications in human-computer interaction and prosthetic control. The project encompassed the complete ML workflow: data collection and cleaning, feature engineering, model selection, hyperparameter tuning, and deployment considerations. We explored various regression techniques including linear models, ensemble methods like Random Forests and Gradient Boosting, and neural network approaches. Special attention was given to temporal dependencies in the data and the importance of real-time prediction constraints for practical applications."
-            data-contributions='["Built end-to-end regression pipeline with automated feature engineering", "Compared 8+ regression models including ensemble and neural approaches", "Implemented cross-validation and hyperparameter optimization strategies", "Engineered temporal features to capture movement dynamics", "Achieved sub-centimeter prediction accuracy for hand positioning", "Created real-time prediction demo for interactive testing"]'
-            data-tech-stack='["Python", "Scikit-learn", "XGBoost", "Pandas", "NumPy", "Matplotlib", "Optuna"]'
+            data-description="The goal of this project was to build a complete and realistic machine learning pipeline, from raw data to final predictions. The dataset consisted of EMG signals captured from the hand, and the objective was to predict hand positions based on muscle activation patterns. Since the data comes from real signals, the first challenge was preprocessing: filtering noisy signals, cleaning the data and extracting meaningful features. Once the features were extracted and selected, I tested several regression models, including gradient-based models, tree-based approaches and neural networks. I tuned hyperparameters carefully and compared different cross-validation strategies to ensure robust evaluation. To push the pipeline further, I experimented with model combinations, where the output of one model becomes an input feature for another. This allowed me to explore ensemble-like strategies and better understand how different models complement each other. This project gave me a strong practical understanding of end-to-end machine learning workflows, and reinforced the importance of data quality, evaluation methodology and careful model comparison."
+            data-contributions='["Built end-to-end regression pipeline with automated feature engineering", "Compared 8+ regression models including ensemble and neural approaches", "Implemented cross-validation and hyperparameter optimization strategies", "Engineered temporal features to capture movement dynamics"]'
+            data-tech-stack='["Python", "Scikit-learn", "XGBoost", "Pandas", "NumPy", "Matplotlib", "RandomForest"]'
             data-images='[]'
           >
             <span class="project-card__tag">Machine Learning / Regression</span>
@@ -123,9 +141,9 @@
             aria-label="View details for Custom Programming Language & Compiler"
             data-title="Custom Programming Language & Compiler"
             data-theme="Compilers / Programming Languages"
-            data-description="A comprehensive compiler construction project where I designed and implemented a custom programming language from the ground up. The project covered all phases of compilation: lexical analysis with a hand-written scanner, syntax analysis using recursive descent parsing, semantic analysis with type checking, intermediate representation generation, optimization passes, and finally code generation targeting a virtual machine. The language featured static typing, first-class functions, basic data structures, and control flow constructs. This project provided deep insights into how programming languages work under the hood, from source code to executable instructions. The accompanying runtime environment included a simple garbage collector and stack-based execution model."
-            data-contributions='["Designed language grammar and implemented lexer using finite automata", "Built recursive descent parser with comprehensive error recovery", "Implemented type inference and static type checking system", "Developed intermediate representation with optimization passes", "Created stack-based virtual machine for code execution", "Wrote comprehensive test suite covering language features"]'
-            data-tech-stack='["C++", "Flex", "Bison", "LLVM", "Make", "GDB", "Valgrind"]'
+            data-description="I built this project to truly understand how a programming language works under the hood, beyond just writing code. Starting from a given language specification and a set of rules, the goal was to design a complete compilation pipeline. I implemented a lexer and a parser that transform source code into tokens, variables and structured representations, then validate the syntax and semantics of the program. Once the code is considered correct, it is translated into low-level assembly instructions. This project helped me connect abstract concepts such as tokens, grammars and parsing rules to concrete implementations. It also gave me a much clearer mental model of what actually happens between the code we write and what the machine executes. Beyond the technical aspects, this project strengthened my understanding of language design choices and their impact on correctness, readability and execution."
+            data-contributions='["Designed language grammar and implemented lexer using finite automata", "Built recursive descent parser with comprehensive error recovery", "Implemented type inference and static type checking system"]'
+            data-tech-stack='["Java", "ASM", "LLVM", "Make"]'
             data-images='[]'
           >
             <span class="project-card__tag">Compilers / Programming Languages</span>
@@ -141,9 +159,9 @@
             aria-label="View details for 3D Graphics & Game Engine Fundamentals"
             data-title="3D Graphics & Game Engine Fundamentals"
             data-theme="Computer Graphics / Rendering"
-            data-description="An exploration of real-time 3D graphics programming and game engine architecture. This project involved building a rendering pipeline from scratch, implementing fundamental concepts like transformations, lighting models, texture mapping, and shader programming. Starting with basic rasterization, the project evolved to include more advanced techniques such as shadow mapping, deferred rendering, and post-processing effects. The engine component covered scene graph management, resource loading, input handling, and basic physics integration. Working at this low level provided invaluable understanding of how modern games and 3D applications achieve their visual fidelity and real-time performance through careful optimization and GPU utilization."
-            data-contributions='["Implemented a complete rendering pipeline with OpenGL", "Developed vertex and fragment shaders for various lighting models", "Created shadow mapping and ambient occlusion effects", "Built scene graph system for efficient object management", "Integrated basic physics with collision detection", "Optimized rendering for 60 FPS on mid-range hardware"]'
-            data-tech-stack='["C++", "OpenGL", "GLSL", "GLFW", "GLM", "Assimp", "stb_image"]'
+            data-description="This project was designed to understand the fundamentals of real-time 3D graphics and how interactive 3D environments are built. I created a small 3D environment using polygon-based geometry and implemented texture mapping on different shapes. Various lighting models were added, including directional, point and spot lights, to simulate realistic illumination. To push the project further, I implemented a day-night cycle, along with reflection and refraction effects to better understand how light interacts with materials. Basic player movement, gravity and camera control were also integrated to make the environment interactive. This project gave me a solid understanding of the graphics pipeline, from geometry to shading, and helped bridge the gap between mathematical concepts and visual results on screen."
+            data-contributions='["Implemented a complete rendering pipeline with OpenGL", "Developed vertex and fragment shaders for various lighting models", "Created shadow mapping and ambient occlusion effects", "Built scene graph system for efficient object management", "Integrated basic physics with collision detection"]'
+            data-tech-stack='["C++", "OpenGL", "GLSL", "GLFW", "GLM", "stb_image"]'
             data-images='[]'
           >
             <span class="project-card__tag">Computer Graphics / Rendering</span>
@@ -159,8 +177,8 @@
             aria-label="View details for Data Management, Privacy & Fairness with LLM-based Data Reading"
             data-title="Data Management, Privacy & Fairness with LLM-based Data Reading"
             data-theme="Data / Responsible AI"
-            data-description="This project addressed critical challenges at the intersection of data management and responsible AI. We explored how large language models can be used for intelligent data reading and extraction while maintaining privacy and fairness constraints. The work involved developing techniques for privacy-preserving data access, implementing fairness metrics and bias detection methods, and creating a framework for auditing LLM-based data interactions. We investigated differential privacy mechanisms, federated approaches, and the unique challenges that arise when powerful language models interact with sensitive datasets. The project emphasized practical considerations for deploying AI systems that must comply with regulations like GDPR while still providing valuable data insights."
-            data-contributions='["Designed privacy-preserving data access patterns for LLM applications", "Implemented fairness metrics and bias detection pipelines", "Created audit logging framework for LLM data interactions", "Developed differential privacy mechanisms for sensitive queries", "Analyzed regulatory compliance requirements (GDPR, CCPA)", "Produced documentation on responsible AI practices for data systems"]'
+            data-description="This project explores model explainability by using LIME to interpret predictions from a differentially private XGBoost classifier trained on the Adult dataset. Special attention was given to data filtering and privacy constraints to ensure responsible model training. To make the explanations more accessible, a Large Language Model (LLM) was used to translate technical feature-based explanations into clear, human-readable insights. The goal was to bridge the gap between complex machine learning models and understandable, trustworthy explanations for non-technical users."
+            data-contributions='["Designed privacy-preserving data access patterns for LLM applications", "Implemented fairness metrics and bias detection pipelines", "Created audit logging framework for LLM data interactions", "Developed differential privacy mechanisms for sensitive queries"]'
             data-tech-stack='["Python", "LangChain", "OpenAI API", "PostgreSQL", "Pandas", "Fairlearn", "PySyft"]'
             data-images='[]'
           >
@@ -178,17 +196,17 @@
   <footer class="footer">
     <div class="container">
       <nav class="footer__links" aria-label="Social links">
-        <a href="https://github.com/yourusername" class="footer__link" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/lprevost7" class="footer__link" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
         <a href="https://linkedin.com/in/yourusername" class="footer__link" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>
-        <a href="mailto:your.email@example.com" class="footer__link">
-          Email
-        </a>
+        <span class="footer__link">
+          Email : prevost.louis7@gmail.com
+        </span>
       </nav>
-      <p class="footer__copy">© 2026 Your Name. All rights reserved.</p>
+      <p class="footer__copy">© 2026 Prevost Louis. All rights reserved.</p>
     </div>
   </footer>
 
