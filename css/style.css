@@ -303,6 +303,16 @@ button {
   line-height: var(--line-height-relaxed);
 }
 
+.hero__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: var(--spacing-lg);
+  border: 3px solid var(--color-border);
+  box-shadow: 0 4px 12px var(--color-shadow);
+}
+
 @media (min-width: 768px) {
   .hero {
     padding: var(--spacing-4xl) 0 var(--spacing-3xl);
@@ -314,6 +324,11 @@ button {
 
   .hero__title {
     font-size: var(--font-size-2xl);
+  }
+
+  .hero__image {
+    width: 200px;
+    height: 200px;
   }
 }
 
